@@ -56,12 +56,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case MT(MOD_LGUI, KC_A):
-            return TAPPING_TERM -30;
-        case MT(MOD_LALT, KC_S):
-            return TAPPING_TERM -30;
-        case MT(MOD_LCTL, KC_D):
-            return TAPPING_TERM -30;
         case MT(MOD_LSFT, KC_F):
             return TAPPING_TERM -30;
         case TD(DANCE_0):
@@ -72,45 +66,17 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
             return TAPPING_TERM -30;
         case MT(MOD_RSFT, KC_J):
             return TAPPING_TERM -30;
-        case MT(MOD_RCTL, KC_K):
-            return TAPPING_TERM -30;
-        case MT(MOD_LALT, KC_L):
-            return TAPPING_TERM -30;
-        case MT(MOD_RGUI, KC_SCLN):
-            return TAPPING_TERM -30;
         case KC_ENTER:
             return TAPPING_TERM -80;
         case LT(2,KC_BSPC):
             return TAPPING_TERM -60;
-        case TD(DANCE_1):
-            return TAPPING_TERM -30;
-        case TD(DANCE_2):
-            return TAPPING_TERM -30;
-        case TD(DANCE_3):
-            return TAPPING_TERM -30;
         case TD(DANCE_4):
             return TAPPING_TERM -30;
         case MT(MOD_RSFT, KC_LBRC):
             return TAPPING_TERM -30;
-        case MT(MOD_RCTL, KC_RBRC):
-            return TAPPING_TERM -30;
-        case MT(MOD_LALT, KC_EQUAL):
-            return TAPPING_TERM -30;
-        case TD(DANCE_5):
-            return TAPPING_TERM -30;
-        case MT(MOD_LGUI, KC_HOME):
-            return TAPPING_TERM -30;
-        case MT(MOD_LALT, KC_PAGE_UP):
-            return TAPPING_TERM -30;
-        case MT(MOD_LCTL, KC_PGDN):
-            return TAPPING_TERM -30;
         case MT(MOD_LSFT, KC_END):
             return TAPPING_TERM -30;
         case MT(MOD_RSFT, KC_DOWN):
-            return TAPPING_TERM -30;
-        case MT(MOD_RCTL, KC_UP):
-            return TAPPING_TERM -30;
-        case MT(MOD_LALT, KC_RIGHT):
             return TAPPING_TERM -30;
         default:
             return TAPPING_TERM;
