@@ -23,8 +23,8 @@ enum tap_dance_codes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_voyager(
-    KC_BRIGHTNESS_UP,KC_BRIGHTNESS_DOWN,KC_SYSTEM_WAKE, KC_SYSTEM_SLEEP,MAC_LOCK,       KC_SYSTEM_POWER,                                KC_MEDIA_PREV_TRACK,KC_MEDIA_PLAY_PAUSE,KC_MEDIA_STOP,  KC_MEDIA_NEXT_TRACK,KC_AUDIO_VOL_UP,KC_AUDIO_VOL_DOWN,
-    KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,                                           KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           OSM(MOD_LSFT),  
+    KC_BRIGHTNESS_UP,KC_BRIGHTNESS_DOWN,KC_SYSTEM_WAKE, KC_SYSTEM_SLEEP,MAC_LOCK,       KC_SYSTEM_POWER,                                KC_MEDIA_STOP,  KC_MEDIA_PLAY_PAUSE,KC_MEDIA_PREV_TRACK,KC_MEDIA_NEXT_TRACK,KC_AUDIO_VOL_UP,KC_AUDIO_VOL_DOWN,
+    KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,                                           KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           TG(3),          
     KC_ESCAPE,      MT(MOD_LGUI, KC_A),MT(MOD_LALT, KC_S),MT(MOD_LCTL, KC_D),MT(MOD_LSFT, KC_F),KC_G,                                           MEH_T(KC_H),    MT(MOD_LSFT, KC_J),MT(MOD_RCTL, KC_K),MT(MOD_LALT, KC_L),MT(MOD_RGUI, KC_SCLN),KC_QUOTE,       
     TD(DANCE_0),    KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       OSM(MOD_HYPR),  
                                                     MO(1),          KC_SPACE,                                       KC_ENTER,       LT(2,KC_BSPC)
@@ -53,11 +53,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 const uint16_t PROGMEM combo0[] = { MT(MOD_RCTL, KC_K), MT(MOD_LSFT, KC_J), COMBO_END};
-const uint16_t PROGMEM combo1[] = { TD(DANCE_0), LT(2,KC_BSPC), COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo0, KC_ESCAPE),
-    COMBO(combo1, TG(3)),
 };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {

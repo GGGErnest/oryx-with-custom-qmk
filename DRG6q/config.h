@@ -3,9 +3,9 @@
 #define COMBO_TERM 100
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "DRG6q/RjQYQ5"
+#define SERIAL_NUMBER "DRG6q/3vyNlB"
 #define LAYER_STATE_8BIT
-#define COMBO_COUNT 2
+#define COMBO_COUNT 1
 #define HCS(report) host_consumer_send(record->event.pressed ? report : 0); return false
 
 #define TAPPING_TERM_PER_KEY
