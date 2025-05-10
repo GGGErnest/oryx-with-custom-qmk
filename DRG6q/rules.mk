@@ -8,4 +8,5 @@ SPACE_CADET_ENABLE = no
 COMBO_ENABLE = yes
 
 
+KEY_OVERRIDE_ENABLE = yes
 SRC += features/achordion.c
