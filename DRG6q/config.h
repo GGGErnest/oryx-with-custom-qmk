@@ -12,3 +12,6 @@
 #define TAPPING_TERM_PER_KEY
 #define RGB_MATRIX_STARTUP_SPD 60
 
+
+# Custom QMK here
+KEY_OVERRIDE_ENABLE = yes
